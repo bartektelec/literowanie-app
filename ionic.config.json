@@ -1,0 +1,7 @@
+{
+  "name": "literowanie-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
