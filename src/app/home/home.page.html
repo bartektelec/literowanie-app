@@ -15,6 +15,10 @@
     </ion-toolbar>
   </ion-header>
 
+  <app-card
+    imgSrc="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FfAT2Db0j0Mblu%2Fgiphy.gif&f=1&nofb=1"
+    imgAlt="kotek"></app-card>
+
   <ion-list>
     <ion-item [routerLink]="'/message/1'" *ngFor="let text of ['fruits', 'animals', 'shapes']">
       <ion-label> {{text}} </ion-label>

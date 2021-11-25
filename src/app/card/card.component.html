@@ -1,11 +1,15 @@
-<div>
+<div class='card-wrapper' [class]="isShaking ? 'shaking' : ''">
   <img [alt]="imgAlt" [src]="imgSrc" />
 
-  <div>
-
+  <div class="letter-wrapper">
+    <div class="letter" *ngFor="let letterSlot of filledOutLetters">
+      {{ letterSlot }}
+    </div>
   </div>
 
-  <div>
-
+  <div class="letter-wrapper">
+    <div class="letter" (click)="clickLetter($event)" *ngFor="let letterSlot of splitLetters; let i = index">
+      {{ letterSlot }}
+    </div>
   </div>
 </div>
